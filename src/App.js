@@ -28,9 +28,11 @@ export default class App extends React.Component{
                             </div>
                         </div>
                     </nav>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/user" component={User}/>
-                    <Route path="/profile" component={Profile}/>
+                   <div className="container">
+                       <Route exact path="/" component={Home}/>
+                       <Route path="/user" component={User}/>
+                       <Route path="/profile" component={Profile}/>
+                   </div>
                 </div>
             </Router>
         )
